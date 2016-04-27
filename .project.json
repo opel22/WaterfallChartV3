@@ -1,0 +1,126 @@
+{
+  "generation": [
+    {
+      "templateId": "vizpacker.emptyProject",
+      "templateVersion": "0.0.1",
+      "dateTimeStamp": "Wed, 27 Apr 2016 18:54:54 GMT"
+    }
+  ],
+  "vizprojectmanager": {
+    "id": "pp.viz.ext.watefallchartv3",
+    "name": "Waterfall Chart v3",
+    "version": "1.0.0",
+    "vendor": {
+      "name": "Your company",
+      "url": "Your company website"
+    },
+    "description": " ",
+    "template": "standard",
+    "title": {
+      "enabled": true,
+      "place": "top",
+      "text": "Chart Title",
+      "alignment": "center"
+    },
+    "legend": {
+      "enabled": true,
+      "place": "right",
+      "title": {
+        "text": "City/Year"
+      }
+    },
+    "plot": {
+      "id": "pp.viz.ext.watefallchartv3.PlotModule",
+      "name": "Waterfall Chart v3 Module",
+      "feeds": {
+        "dimensionSets": [
+          {
+            "name": "Dimension",
+            "min": "0",
+            "max": "2",
+            "minStackedDims": "0",
+            "maxStackedDims": "Infinity",
+            "aaIndex": 1,
+            "id": "pp.viz.ext.watefallchartv3.PlotModule.DS1",
+            "plotId": "pp.viz.ext.watefallchartv3.PlotModule",
+            "i": 1
+          }
+        ],
+        "measureSets": [
+          {
+            "name": "Start Measure",
+            "min": "0",
+            "max": "Infinity",
+            "mgIndex": 1,
+            "id": "pp.viz.ext.watefallchartv3.PlotModule.MS1",
+            "plotId": "pp.viz.ext.watefallchartv3.PlotModule",
+            "i": 1
+          },
+          {
+            "min": "0",
+            "max": "Infinity",
+            "name": "End Measure",
+            "id": "pp.viz.ext.watefallchartv3.PlotModule.MS2",
+            "mgIndex": 2,
+            "type": "Measure",
+            "plotId": "pp.viz.ext.watefallchartv3.PlotModule",
+            "i": 2
+          },
+          {
+            "min": "0",
+            "max": "Infinity",
+            "name": "Deviation",
+            "id": "pp.viz.ext.watefallchartv3.PlotModule.MS3",
+            "mgIndex": 3,
+            "type": "Measure",
+            "plotId": "pp.viz.ext.watefallchartv3.PlotModule",
+            "i": 3
+          }
+        ]
+      }
+    },
+    "data": {
+      "fileName": "wf_data.csv",
+      "delimiter": ";",
+      "useFirstRowAsHeader": true,
+      "fields": [
+        "Kostenart",
+        "Ist",
+        "Plan",
+        "Diff"
+      ],
+      "types": [
+        "Dimension",
+        "Measure",
+        "Measure",
+        "Measure"
+      ]
+    },
+    "binding": {
+      "pp.viz.ext.watefallchartv3.PlotModule.MS1": [
+        "Plan"
+      ],
+      "pp.viz.ext.watefallchartv3.PlotModule.MS2": [
+        "Ist"
+      ],
+      "pp.viz.ext.watefallchartv3.PlotModule.MS3": [
+        "Diff"
+      ],
+      "pp.viz.ext.watefallchartv3.PlotModule.DS1": [
+        "Kostenart"
+      ]
+    },
+    "modelVersion": "0.0.2",
+    "requiresdkversion": "5.6.0",
+    "dataModel": "sap.viz.api.data.CrosstableDataset",
+    "container": "BorderSVGFlow",
+    "newExtensionAPI": false
+  },
+  "translation": {
+    "translationDomain": "",
+    "supportedLanguages": "en,fr,de",
+    "defaultLanguage": "en",
+    "defaultI18NPropertyFile": "i18n.properties",
+    "resourceModelName": "i18n"
+  }
+}
