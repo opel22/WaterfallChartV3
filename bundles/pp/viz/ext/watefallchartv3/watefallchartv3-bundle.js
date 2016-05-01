@@ -1,5 +1,6 @@
-define("watefallchartv3-bundle", ["pp_viz_ext_watefallchartv3-src/js/flow", "css!pp_viz_ext_watefallchartv3-src/style/default.css"],
-	function(flowDefinition, cssStyleDeclaration) {
+define("watefallchartv3-bundle", ["pp_viz_ext_watefallchartv3-src/js/flow", "pp_viz_ext_waterfallchartv3-src/js/propertyeditor/spec",
+"css!pp_viz_ext_watefallchartv3-src/style/default.css"],
+	function(flowDefinition, propertyEditorSpec, cssStyleDeclaration) {
 		var cssString = "",
 			rules, i;
 		if (cssStyleDeclaration && cssStyleDeclaration.cssRules) {
@@ -34,11 +35,12 @@ define("watefallchartv3-bundle", ["pp_viz_ext_watefallchartv3-src/js/flow", "css
 					}],
 					"resources": [{
 						"key": "sap.viz.api.env.Template.loadPaths",
-						"path": "./pp_viz_ext_watefallchartv3-src/resources/templates"
+						"path": "./pp_viz_ext_watefallchartv3-src/resources/languages/propertyeditor"
 					}]
 				}
 			}]
 		});
+        vizExtBundle.components = vizExtBundle.components.concat(propertyEditorSpec.components);			
 		// sap.bi.framework.getService is defined in BundleLoader, which is
 		// always available at this timeframe
 		// in standalone mode sap.viz.js will force load and active the

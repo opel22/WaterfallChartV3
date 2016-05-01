@@ -19,8 +19,7 @@ define("pp_viz_ext_watefallchartv3-src/js/utils/util", [], function() {
 				mapper = f2 ? f1 : undefined,
 				rows;
 			try {
-				var me = this,
-					parser = me._getParser(data);
+				var me = this, parser = me._getParser(data);
 				rows = parser.call(me, data);
 				if (!rows) {
 					rows = [];

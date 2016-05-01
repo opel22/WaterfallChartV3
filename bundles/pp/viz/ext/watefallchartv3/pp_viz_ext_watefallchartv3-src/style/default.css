@@ -1,3 +1,40 @@
 /* IMPORTANT:  use unique CSS class name to avoid confliction with other extensions or applications. */
 
 /* For example, adding the extension id as prefix of CSS class name. */
+
+.waterfall_bar.waterfall_total rect {
+  fill: steelblue;
+}
+
+.waterfall_bar.waterfall_start rect {
+  fill: steelblue;
+}
+
+.waterfall_bar.waterfall_negative rect {
+  fill: darkolivegreen;
+}
+.waterfall_bar.waterfall_positive rect {
+  fill: crimson;
+}
+
+.waterfall_bar line.connector {
+  stroke: grey;
+  stroke-dasharray: 3;
+}
+
+.waterfall_bar text {
+  fill: white;
+  font: 12px sans-serif;
+  text-anchor: middle;
+}
+
+.axis text {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
