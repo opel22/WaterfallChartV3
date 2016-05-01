@@ -16,9 +16,9 @@
             require(["previewData"], function(previewData) {
                 // Configure the baseUrl for requireJS to find the specific module or file
                 requirejs.config({
-                    baseUrl : "./bundles/pp/viz/ext/watefallchartv3"
+                    baseUrl : "./bundles/pp/viz/ext/waterfallchartv3"
                 });
-                require([ "watefallchartv3-bundle" ], function() {
+                require([ "waterfallchartv3-bundle" ], function() {
                     //chart option
                     var chartPoperties = {
                         title : {
@@ -43,7 +43,7 @@
                         //create chart after applying template
                         try {
                             var chart = sap.viz.api.core.createViz({
-                                type : "pp.viz.ext.watefallchartv3",
+                                type : "pp.viz.ext.waterfallchartv3",
                                 data : ds,
                                 bindings : previewData.cross.bindings,
                                 container : $("#chart"),
@@ -68,7 +68,7 @@
 
                     function onLocaleApplied() {
                         // set template loadPath
-                        sap.viz.api.env.Resource.path("sap.viz.api.env.Template.loadPaths", ["./bundles/pp/viz/ext/watefallchartv3/pp_viz_ext_watefallchartv3-src/resources/templates"]);
+                        sap.viz.api.env.Resource.path("sap.viz.api.env.Template.loadPaths", ["./bundles/pp/viz/ext/waterfallchartv3/pp_viz_ext_waterfallchartv3-src/resources/templates"]);
                         sap.viz.api.env.Template.set("standard", onTplLoad, onTplFail);
                         $("footer").text(sap.viz.extapi.env.Language.getResourceString('IDS_VERSION_PUBLIC'));
                     }
@@ -80,7 +80,7 @@
                     }
                 
                     if (lang) {
-                        sap.viz.api.env.Resource.path("sap.viz.api.env.Language.loadPaths", ["./bundles/pp/viz/ext/watefallchartv3/pp_viz_ext_watefallchartv3-src/resources/languages"]);
+                        sap.viz.api.env.Resource.path("sap.viz.api.env.Language.loadPaths", ["./bundles/pp/viz/ext/waterfallchartv3/pp_viz_ext_waterfallchartv3-src/resources/languages"]);
                         sap.viz.api.env.Language.set(lang, onLocaleApplied);
                     } else {
                         onLocaleApplied();

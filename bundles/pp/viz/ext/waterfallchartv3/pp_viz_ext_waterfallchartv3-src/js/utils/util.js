@@ -1,5 +1,5 @@
 /*eslint no-shadow:0 no-loop-func:0*/
-define("pp_viz_ext_watefallchartv3-src/js/utils/util", [], function() {
+define("pp_viz_ext_waterfallchartv3-src/js/utils/util", [], function() {
 	/*
 	 * In most cases, you don't need to modify the following code.
 	 */

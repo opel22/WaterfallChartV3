@@ -1,5 +1,5 @@
-define("watefallchartv3-bundle", ["pp_viz_ext_watefallchartv3-src/js/flow", "pp_viz_ext_waterfallchartv3-src/js/propertyeditor/spec",
-"css!pp_viz_ext_watefallchartv3-src/style/default.css"],
+define("waterfallchartv3-bundle", ["pp_viz_ext_waterfallchartv3-src/js/flow", "pp_viz_ext_waterfallchartv3-src/js/propertyeditor/spec",
+"css!pp_viz_ext_waterfallchartv3-src/style/default.css"],
 	function(flowDefinition, propertyEditorSpec, cssStyleDeclaration) {
 		var cssString = "",
 			rules, i;
@@ -16,10 +16,10 @@ define("watefallchartv3-bundle", ["pp_viz_ext_watefallchartv3-src/js/flow", "pp_
 			cssString: cssString
 		};
 		var vizExtBundle = sap.bi.framework.declareBundle({
-			"id": "pp.viz.ext.watefallchartv3",
+			"id": "pp.viz.ext.waterfallchartv3",
 			"version": "1.0.0",
 			"components": [{
-				"id": "pp.viz.ext.watefallchartv3",
+				"id": "pp.viz.ext.waterfallchartv3",
 				"provide": "sap.viz.impls",
 				"instance": vizExtImpl,
 				"customProperties": {
@@ -35,7 +35,7 @@ define("watefallchartv3-bundle", ["pp_viz_ext_watefallchartv3-src/js/flow", "pp_
 					}],
 					"resources": [{
 						"key": "sap.viz.api.env.Template.loadPaths",
-						"path": "./pp_viz_ext_watefallchartv3-src/resources/languages/propertyeditor"
+						"path": "./pp_viz_ext_waterfallchartv3-src/resources/languages/propertyeditor"
 					}]
 				}
 			}]

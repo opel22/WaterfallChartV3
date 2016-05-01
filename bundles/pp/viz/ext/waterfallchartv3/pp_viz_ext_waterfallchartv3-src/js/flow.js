@@ -1,4 +1,4 @@
-define("pp_viz_ext_watefallchartv3-src/js/flow", ["pp_viz_ext_watefallchartv3-src/js/module"], function(moduleFunc) {
+define("pp_viz_ext_waterfallchartv3-src/js/flow", ["pp_viz_ext_waterfallchartv3-src/js/module"], function(moduleFunc) {
 	var flowRegisterFunc = function() {
 		var flow = sap.viz.extapi.Flow.createFlow({
 			id: "pp.viz.ext.waterfallchartv3",

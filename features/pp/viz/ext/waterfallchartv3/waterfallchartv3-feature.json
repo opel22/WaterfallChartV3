@@ -1,6 +1,6 @@
 {
 	"metadataVersion": "1.0",
-	"id": "pp.viz.ext.watefallchartv3",
+	"id": "pp.viz.ext.waterfallchartv3",
 	"name": "Waterfall Chart v3",
 	"description": " ",
 	"version": "1.0.0",
@@ -13,7 +13,7 @@
 		"version": "5.6.0"
 	}],
 	"bundles": [{
-		"id": "pp.viz.ext.watefallchartv3",
+		"id": "pp.viz.ext.waterfallchartv3",
 		"version": "1.0.0"
 	}]
 }

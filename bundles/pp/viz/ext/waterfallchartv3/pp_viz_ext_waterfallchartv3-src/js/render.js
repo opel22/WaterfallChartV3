@@ -1,4 +1,4 @@
-define("pp_viz_ext_watefallchartv3-src/js/render", [], function() {
+define("pp_viz_ext_waterfallchartv3-src/js/render", [], function() {
 	/*
 	 * This function is a drawing function; you should put all your drawing logic in it.
 	 * it's called in moduleFunc.prototype.render

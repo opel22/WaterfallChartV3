@@ -1,4 +1,4 @@
-define("pp_viz_ext_watefallchartv3-src/js/module", ["pp_viz_ext_watefallchartv3-src/js/render",	"pp_viz_ext_watefallchartv3-src/js/dataMapping"], function(render, processData) {
+define("pp_viz_ext_waterfallchartv3-src/js/module", ["pp_viz_ext_waterfallchartv3-src/js/render",	"pp_viz_ext_waterfallchartv3-src/js/dataMapping"], function(render, processData) {
 	// Extension module implementation
 	var moduleFunc = {
 		render: function(selection) {

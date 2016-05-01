@@ -1,4 +1,4 @@
-define("pp_viz_ext_watefallchartv3-src/js/dataMapping", ["pp_viz_ext_watefallchartv3-src/js/utils/util"], function(util) {
+define("pp_viz_ext_waterfallchartv3-src/js/dataMapping", ["pp_viz_ext_waterfallchartv3-src/js/utils/util"], function(util) {
 	var processData = function(data, feeds, done) {
 		// Build name index so that dimension/measure sets can be accessed by name
 		util.buildNameIdx(feeds);
